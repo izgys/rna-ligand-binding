@@ -50,15 +50,14 @@ Given a therapeutic or regulatory **RNA sequence**, the objective is to:
 
 ```mermaid
 graph TD
-    A[Input xRNA Sequence] --> B[Predict Secondary Structure with RNAfold]
+    A[Input FMN Riboswitch Sequence] --> B[Predict Secondary Structure with RNAfold]
     B --> C1[Model 3D Structure with RNAComposer]
     B --> C2[Model 3D Structure with FARFAR2]
-    C1 --> D[Prepare and Dock Ligand with AutoDock or GNINA]
+    C1 --> D[Compare RNAComposer and FARFAR2 Models]
     C2 --> D
-    C1 --> G[Compare RNAComposer and FARFAR2 models]
-    C2 --> G
-    D --> E[Score Binding Affinity using ML model or MMGBSA]
-    E --> F[Visualize Base Pairing and Interactions]
+    D --> E[Prepare and Dock Ligand with AutoDock or GNINA]
+    E --> F[Score Binding Affinity using ML model or MMGBSA]
+    F --> G[Visualize Base Pairing and Interactions]
 ```
 
 ---
