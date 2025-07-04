@@ -28,8 +28,8 @@ Given a therapeutic or regulatory **RNA sequence**, the objective is to:
 
 | Step                       | Tools Used                                           |
 |----------------------------|------------------------------------------------------|
-| Secondary Structure        | ViennaRNA (RNAfold), RNAstructure                   |
-| Tertiary Structure         | FARFAR2 (Rosetta), EternaFold                        |
+| Secondary Structure        | ViennaRNA (RNAfold)                                  |
+| Tertiary Structure         | FARFAR2 (Rosetta), RNAComposer                       |
 | Ligand Docking             | AutoDock Vina, GNINA (DL-based docking)              |
 | Affinity Scoring           | GraphBind, DeepBindRNA, MM/GBSA                     |
 | Visualization              | PyMOL, NGL Viewer, VARNA                            |
@@ -110,7 +110,7 @@ rna_ligand_binding_ai/
 ## Key Analyses
 
 - **Secondary structure prediction and base-pairing patterns**
-- **RNA 3D model comparison** using different tools (FARFAR2, EternaFold)
+- **RNA 3D model comparison** using different tools (FARFAR2, RNAComposer)
 - **Docking score distribution** across ligand poses (GNINA/AutoDock)
 - **AI-based vs. physics-based scoring performance**
 - **Interaction visualization**: hydrogen bonds, stacking, and contacts
