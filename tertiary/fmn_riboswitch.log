@@ -1,0 +1,57 @@
+RNAComposer run (Web interface)
+Task ID: 2798466f-d63d-4cce-b5b7-09795ce69e69
+Task description: FMN_ribo3d
+Date: 2025-07-04
+
+Input:
+- RNA: FMN riboswitch (B. subtilis)
+- Sequence: 
+  GGGAAACGUGUAAAGGUUCGAGUGGAAGCGAAACAGGUGCGCCUCAAGGUGGAAAGCGAAAGGUUUGCGUCACCCGCACCCAGCCGGAGUCGGCAAGACAUUGUCA
+- Dot-bracket secondary structure:
+  ........(((...(.(((.....))).)...)))((((((......(((((...(((((...))))).)))))))))))..((((....))))..(((...)))
+
+---
+
+### Step-by-step Process
+
+**Step 1: Input Validation**
+- Secondary structure provided by user
+- Validation completed successfully
+
+**Step 2: Fragmentation of Secondary Structure**
+- Identified 7 stems (D1–D7), 8 loops (L1–L8), and 5 single strands (SS5p, SS1–SS3, SS3p)
+
+**Step 3: 3D Structure Elements Preparation**
+- Structures selected based on homologous elements from PDB:
+  - e.g. Stem D1 matched to 3FTM with 100% homology
+  - e.g. Loop L1 matched to 2ZJR with 80% homology
+
+**Step 4: Rigid Body Transformations and Merging**
+- All fragments assembled into 3D model successfully
+
+**Step 5: Initial Torsion Angle Minimization**
+- Completed without issues
+
+**Step 6: Cartesian Space Energy Minimization**
+- Progressive energy improvements during 1000 cycles:
+  - Etotal improved from -842.430 → -2224.511
+  - Gradients and structural strain reduced across bonds, angles, van der Waals, electrostatics, etc.
+
+**Final Output**
+- MODEL 1 successfully generated and refined
+- Total composition time: 23 seconds
+
+Final minimized energy (Cycle 1000):
+- Etotal = -2224.511
+- Grad(E) = 1.295
+- E(BOND)=24.584  E(ANGL)=336.991  E(IMPR)=47.261
+- E(VDW)=-1670.487  E(ELEC)=-983.607
+- E(NOE)=1.126  E(PLAN)=19.622
+
+---
+
+### Files Saved
+- `fmn_riboswitch.pdb` → Final 3D model
+- `fmn_riboswitch_blocks.txt` → Structural fragment mapping
+- Log manually created from RNAComposer web output
+
