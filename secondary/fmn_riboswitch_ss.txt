@@ -1,0 +1,3 @@
+>FMN_riboswitch_Bsubtilis_3F2Q
+GGGAAACGUGUAAAGGUUCGAGUGGAAGCGAAACAGGUGCGCCUCAAGGUGGAAAGCGAAAGGUUUGCGUCACCCGCACCCAGCCGGAGUCGGCAAGACAUUGUCA
+........(((...(.(((.....))).)...)))((((((......(((((...(((((...))))).)))))))))))..((((....))))..(((...))). (-28.70)
